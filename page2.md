@@ -1,5 +1,15 @@
 # Taking Django to the SPA
 
+### Contents:
+* [Using Angular with Django](https://github.com/wgoode3/djangular/blob/master/page1.md)
+* Taking Django to the SPA
+* [Connecting Angular + Middleware Settings](https://github.com/wgoode3/djangular/blob/master/page3.md)
+* [Getting and Posting data to our Django server](https://github.com/wgoode3/djangular/blob/master/page4.md)
+* [Assignment 1 - Django Angular Tasks](https://github.com/wgoode3/djangular/blob/master/page5.md)
+* [Using a database other than SQLite (Optional)](https://github.com/wgoode3/djangular/blob/master/page6.md)
+* [Assignment 2 - Django Angular Login and Registration](https://github.com/wgoode3/djangular/blob/master/page7.md)
+* [Assignment 3 - Django Angular E-Commerce (Highly Optional)](https://github.com/wgoode3/djangular/blob/master/page8.md)
+
 By default, Django wants us to create multiple templates (html files with embedded python) for the server to render to our users. If instead we would like to create a **S**ingle **P**age **A**pplication we will have to play around with the settings somewhat. Enter [django-spa](https://github.com/metakermit/django-spa).
 Django SPA is a middleware that will make it easy for us to make Django serve up our ```index.html``` for us.
 
