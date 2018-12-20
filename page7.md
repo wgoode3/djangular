@@ -10,4 +10,4 @@ Build a login and registration form using Django and Angular.
 
 <strong>Bonus Challenge:</strong> Prevent the user from accessing the success page if they are not logged in.
 
-[Next](https://raw.githubusercontent.com/wgoode3/djangular/master/page8.md)
+[Next](https://github.com/wgoode3/djangular/blob/master/page8.md)

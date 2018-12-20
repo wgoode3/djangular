@@ -39,4 +39,4 @@ Lastly be sure to add in ```STATIC_ROOT``` and point it to the ```dist``` folder
 
 After this we should be able to view our angular app's ```index.html``` when we run ```ng build --watch``` and ```python manage.py runserver```.
 
-[Next](https://raw.githubusercontent.com/wgoode3/djangular/master/page4.md)
+[Next](https://github.com/wgoode3/djangular/blob/master/page4.md)

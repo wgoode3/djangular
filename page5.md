@@ -12,4 +12,4 @@ Let's start with an existing Angular frontend [click to download](https://github
 
 <strong>Hacker Challenge:</strong> Alter the client code to also use [front end validations](https://angular.io/guide/form-validation).
 
-[Next](https://raw.githubusercontent.com/wgoode3/djangular/master/page6.md)
+[Next](https://github.com/wgoode3/djangular/blob/master/page6.md)

@@ -1,3 +1,3 @@
 # Django + Angular = Djangular?
 
-[Get Started](https://raw.githubusercontent.com/wgoode3/djangular/master/page1.md)
+[Get Started](https://github.com/wgoode3/djangular/blob/master/page1.md)

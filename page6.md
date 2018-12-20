@@ -61,4 +61,4 @@ DATABASES = {
 
 You may need to adjust the values of ```USER``` and ```PASSWORD``` accordingly. Make sure the ```NAME``` is the same as the name of the schema you created in MySQL above.
 
-[Next](https://raw.githubusercontent.com/wgoode3/djangular/master/page7.md)
+[Next](https://github.com/wgoode3/djangular/blob/master/page7.md)

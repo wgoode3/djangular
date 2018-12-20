@@ -58,4 +58,4 @@ Using class based views we can handle all 5 routes we need with only two classes
 
 The next thing to notice is that we aren't using ```render``` or ```redirect```. Aside from serving the one static ```index.html``` page, we want this server to only respond with JSON, so every route receives a JsonResponse.
 
-[Next](https://raw.githubusercontent.com/wgoode3/djangular/master/page5.md)
+[Next](https://github.com/wgoode3/djangular/blob/master/page5.md)

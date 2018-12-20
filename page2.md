@@ -43,4 +43,4 @@ Then proceed to make a new project as normal, I would suggest this folder struct
 # some files and folders removed for brevity
 ```
 
-[Next](https://raw.githubusercontent.com/wgoode3/djangular/master/page3.md)
+[Next](https://github.com/wgoode3/djangular/blob/master/page3.md)
