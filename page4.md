@@ -58,4 +58,44 @@ Using class based views we can handle all 5 routes we need with only two classes
 
 The next thing to notice is that we aren't using ```render``` or ```redirect```. Aside from serving the one static ```index.html``` page, we want this server to only respond with JSON, so every route receives a JsonResponse.
 
+<hr>
+
+### How do we respond back with data from our database?
+
+We might naively consider trying something like this...
+
+```python
+# add this import
+from .models import Papaya
+
+class Papayas(View):
+
+    def get(self, request):
+        return JsonResponse({'status': 'ok', 'papayas': Papaya.objects.all()})
+```
+
+However when we do so we are likely to see an error, specifically ```Object of type QuerySet is not JSON Serializable```. 
+
+We can get around this particular error by converting the QuerySet (a Django object that is essentially a list of objects from out models) into a list.
+
+```python
+# instead of
+Papaya.objects.all()
+# use
+list(Papaya.objects.all())
+```
+
+When what is being returned by the Django ORM is a QuerySet (ie when we use ```.all()``` or ```.filter()```) we will have to do this conversion.
+
+After making this change though we are still not done. The QuerySet has been changed to a list that is JSON Serialiazable (can be converted into a JSON Object to send as a JsonResponse) however it contains instances of the Papaya class from our models that also are not JSON Serializable. So we will have to alter what we're doing just a little bit more and make use of the ```.values()``` method.
+
+```python
+# instead of
+list(Papaya.objects.all())
+# use
+list(Papaya.objects.values().all())
+```
+
+This will return just the values (a dictionary) of each entry in our database instead of an instance of the ```Papaya``` class. 
+
 [Next](https://github.com/wgoode3/djangular/blob/master/page5.md)
