@@ -68,7 +68,7 @@ class Papayas(View):
 
     def post(self, request):
     	print(request.POST)
-        return JsonResponse({'status': 'ok')
+        return JsonResponse({'status': 'ok'})
 ```
 
 When we attempt to print the dictionary of form data after posting to our backend server, we may imagine that the data will still be there in ```request.POST``` like it is when we used Django before. Now that the data is being sent back as JSON by angular, we have to look instead in ```request.body```
@@ -80,7 +80,7 @@ class Papayas(View):
 
     def post(self, request):
     	print(request.body)
-        return JsonResponse({'status': 'ok')
+        return JsonResponse({'status': 'ok'})
 ```
 
 We are likely to get back something that looks like the following however... ```b'{"name": "Pappy", "is_ripe": true}'```. This is coming back to us as a bytestring, so the first thing we will need to do is ```.decode()``` this into a ```utf-8``` encoded string. Next if we want to take this string and convert it into an easier to work with dictionary, we can do so using the ```json``` library.
@@ -95,7 +95,7 @@ class Papayas(View):
     def post(self, request):
     	our_data = json.loads(request.body.decode())
 	print(our_data, type(our_data)
-        return JsonResponse({'status': 'ok')
+        return JsonResponse({'status': 'ok'})
 ```
 
 Our data should now be a dictionary that we can use however we want to.
